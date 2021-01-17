@@ -36,6 +36,7 @@ body{
 
 /*start header*/
 header{
+    margin-bottom: 200px;
     margin-top: 30px;
 }
 .header{
@@ -47,11 +48,12 @@ header{
 .header__main-title{
     margin-bottom: 35px;
     margin-top: 100px;
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
     line-height: 1.4;
+    font-size: 50px;
 }
-.header__text{
+.header__subtitle{
     font-weight: 300;
     text-align: center;
     max-width: 510px;
@@ -77,6 +79,10 @@ header{
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+}
+.navigation__logo-ul{
+    display: flex;
+    column-gap: 50px;
 }
 .navigation__list{
     align-items: center;
@@ -108,3 +114,94 @@ header{
     text-transform: none;
 }
 /*end nav*/
+
+/*start process*/
+.process{
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 200px;
+}
+.process__text{
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.process__title{
+    margin-bottom: 35px;
+}
+.process__subtitle{
+    font-weight: 300;
+    text-align: center;
+    max-width: 550px;
+}
+.process__photos{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    column-gap: 33px;
+}
+.photos__photo{
+    border-radius: 12px;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+.photo-style-1{
+    min-height: 285px;
+    max-width: 225px;
+}
+.photo-style-2{
+    min-height: 285px;
+    max-width: 395px;
+}
+/*end process*/
+
+/*start why*/
+.why__text{
+    align-items: center;
+    flex-flow: column wrap;
+    display: flex;
+}
+.why__title{
+    margin-bottom: 35px;
+}
+.why__subtitle{
+    font-weight: 300;
+    text-align: center;
+}
+.why__cards{
+    column-gap: 45px;
+    margin-bottom: 200px;
+    margin-top: 75px;
+    padding: 0px 15px;
+}
+.why__cards__card{
+    background-color: #fff;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    color: #000;
+    padding: 40px 50px 60px 50px;
+    max-width: 340px;
+}
+.card__description{
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap-reverse;
+}
+.card__title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+.card__text{
+    color: #5C5C5C;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+/*end why*/
