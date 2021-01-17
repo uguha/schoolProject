@@ -9,6 +9,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+/*header*/
 header{
     margin-top: 30px;
 }
@@ -17,6 +18,7 @@ header{
     margin: 100px 0px 0px 100px;
 }
 
+/*nav*/
 .navigation{
     align-items: center;
     display: flex;
@@ -47,6 +49,7 @@ header{
     text-transform: none;
 }
 
+/*btn*/
 .btn{
     background-color: transparent;
     border: 1px solid #fff;
@@ -55,6 +58,7 @@ header{
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
     padding: 10px 20px;
+    outline: none;
     transition: all .25s ease,height .2s ease;
 }
 .btn:hover{
