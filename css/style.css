@@ -8,6 +8,7 @@ body{
     background: #181818;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
 }
 .btn{
     background-color: transparent;
@@ -205,3 +206,60 @@ header{
     text-align: center;
 }
 /*end why*/
+
+/*start contacts*/
+.contacts__text{
+    align-items: center;
+    flex-flow: column wrap;
+    display: flex;
+}
+.contacts__title{
+    margin-bottom: 35px;
+}
+.contacts__content{
+    margin-top: 50px;
+}
+.content__social, .content__git, .content__mail{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.content__social p, .content__social a,
+.content__mail p, .content__mail a,
+.content__git p, .content__git a{
+    flex-basis: 100%;
+}
+.social__link, .mail__link, .git__link{
+    margin-bottom: 16px;
+}
+/*end contacts*/
+
+/*start about*/
+.about{
+    margin-bottom: 100px;
+}
+.about__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item__wrapper-img img{
+    max-width: 100%;
+    display: block;
+}
+.item__description{
+    margin-top: 24px;
+}
+.description__title{
+    margin-bottom: 12px;
+}
+.about-page header{
+    margin-bottom: 100px;
+}
+.description__subtitle{
+    font-weight: 300;
+}
+/* .about-page .contacts{
+    margin-top: 50px;
+} */
+/*end about*/
