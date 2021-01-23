@@ -13,35 +13,25 @@
 <body>
     <div class="container about-page">
         <header>
-            <nav>
-                <div class="navigation">
-                    <div class="navigation__logo-ul">
-                        <div class="navigation__logo">
-                            <a href="index.html" class="logo">Funway</a>
-                        </div>
-                        <ul class="navigation__list">
-                            <li class="navigation__list__item">
-                                <a href="index.html">Главная</a>
-                            </li>
-                            <li class="navigation__list__item">
-                                <a href="#"  class="active">О нас</a>
-                            </li>
-                            <li class="navigation__list__item">
-                                <a href="projects.html">Наши работы</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="navigation__mobile">
-                        <button class="mobile__menu-btn btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                <g data-name="menu " id="menu_">
-                                    <path d="M29,6H3A1,1,0,0,0,3,8H29a1,1,0,0,0,0-2Z"/>
-                                    <path d="M3,17H16a1,1,0,0,0,0-2H3a1,1,0,0,0,0,2Z"/>
-                                    <path d="M25,24H3a1,1,0,0,0,0,2H25a1,1,0,0,0,0-2Z"/>
-                                </g>
-                            </svg>
-                        </button>
-                    </div>
+            <nav class="nav navbar navbar-expand-md d-flex justify-content-between">
+                <div class="logo navigation__logo">
+                    <a href="index.html" class="logo">Funway</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="burger"><span></span></div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto navigation__list">
+                        <li class="nav-item navigation__list__item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item navigation__list__item">
+                            <a href="#" class="active">О нас</a>
+                        </li>
+                        <li class="nav-item navigation__list__item">
+                            <a href="projects.html">Наши работы</a>
+                        </li>
+                    </ul>
                     <div class="navigation__buttons">
                         <button class="btn btn-order">Сделать заказ</button>
                     </div>

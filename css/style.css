@@ -90,6 +90,7 @@ header{
     display: flex;
     list-style-type: none;
     margin-bottom: 0;
+    margin-left: 50px;
 }
 .navigation__buttons{
     align-items: center;
@@ -113,6 +114,18 @@ header{
     padding-bottom: 8px;
     border-bottom: 1px solid #fff;
     text-transform: none;
+}
+
+@media screen and (max-width: 767px){
+    .navigation__list__item a.active, .navigation__list__item a:hover{
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+    .navigation__list{
+        margin-bottom: 24px;
+        margin-left: 0;
+        align-items: flex-start;    
+    }
 }
 
 .mobile__menu-svg{
@@ -340,3 +353,46 @@ header{
     }
 }
 /*end about*/
+
+
+/**/
+.burger{
+    display: block;
+    position: relative;
+    width: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
+    height: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
+    border-radius: 10px;
+}
+  
+.burger span{
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    left: 15%;
+    top: 47%;
+}
+  
+.burger::after, .burger::before{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    left: 15%;
+}
+  
+.burger::after{
+    bottom: 25%;
+}
+  
+.burger::before{
+    top: 25%;
+}
+
+.navbar-toggler{
+    padding: 0;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
