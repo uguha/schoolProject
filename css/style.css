@@ -114,6 +114,10 @@ header{
     border-bottom: 1px solid #fff;
     text-transform: none;
 }
+
+.mobile__menu-svg{
+    color: #fff;
+}
 /*end nav*/
 
 /*start process*/
@@ -231,6 +235,11 @@ header{
 }
 .social__link, .mail__link, .git__link{
     margin-bottom: 16px;
+    color: #fff;
+    text-decoration: underline;
+}
+.contacts__subtitle{
+    text-align: center;
 }
 /*end contacts*/
 
@@ -244,8 +253,11 @@ header{
     justify-content: space-between;
 }
 .item__wrapper-img img{
+    border-radius: 10px;
+    object-fit: cover;
     max-width: 100%;
     display: block;
+    min-height: 470px;
 }
 .item__description{
     margin-top: 24px;
@@ -259,7 +271,72 @@ header{
 .description__subtitle{
     font-weight: 300;
 }
-/* .about-page .contacts{
+.contacts-form{
+    background: #FFF;
+    border-radius: 5px;
+    padding: 40px 35px 50px 35px;
+}
+.input{
+    background: #F8F8F8;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 28px;
+    padding: 18px 20px;
+    outline: none;
+    padding-left: 50px;
+    width: 100%;
+}
+.input-name{
+    background-image: url(../img/user-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center left 20px;
+    margin-bottom: 15px;
+}
+.input-phone{
+    background-image: url(../img/phone-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center left 20px;
+    margin-bottom: 25px;
+}
+.form-title{
+    color: #181818;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.form-btn{
+    background-color: #181818;
+    border-radius: 5px;
+}
+.form-btn a{
+    color: #fff;
+}
+.form-btn:hover{
+    color: #181818;
+    border: 1px solid #6D6963;
+    outline-offset: -1px;
+}
+.about-page .header__main-title{
     margin-top: 50px;
-} */
+    margin-bottom: 0;
+}
+.contacts-form{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 992px){
+    .about{
+        justify-content: center;
+    }
+    .about__item:last-child{
+        margin-top: 30px;
+    }
+}
 /*end about*/

@@ -27,12 +27,20 @@
                                 <a href="#"  class="active">О нас</a>
                             </li>
                             <li class="navigation__list__item">
-                                <a href="#">Наши работы</a>
-                            </li>
-                            <li class="navigation__list__item">
-                                <a href="#">Контакты</a>
+                                <a href="projects.html">Наши работы</a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="navigation__mobile">
+                        <button class="mobile__menu-btn btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <g data-name="menu " id="menu_">
+                                    <path d="M29,6H3A1,1,0,0,0,3,8H29a1,1,0,0,0,0-2Z"/>
+                                    <path d="M3,17H16a1,1,0,0,0,0-2H3a1,1,0,0,0,0,2Z"/>
+                                    <path d="M25,24H3a1,1,0,0,0,0,2H25a1,1,0,0,0,0-2Z"/>
+                                </g>
+                            </svg>
+                        </button>
                     </div>
                     <div class="navigation__buttons">
                         <button class="btn btn-order">Сделать заказ</button>
@@ -45,7 +53,7 @@
         </header>
         <main>
             <div class="about row">
-                <div class="about__item col-4">
+                <div class="about__item col-sm-12 col-md-6 col-lg-4">
                     <div class="item__wrapper-img">
                         <img src="img/valeria.jpg"/>
                     </div>
@@ -54,7 +62,7 @@
                         <span class="description__subtitle">Администратор сайта</span>
                     </div>
                 </div>
-                <div class="about__item col-4">
+                <div class="about__item col-sm-12 col-md-6 col-lg-4">
                     <div class="item__wrapper-img">
                         <img src="img/nadya.jpg"/>
                     </div>
@@ -63,7 +71,7 @@
                         <span class="description__subtitle">Главнй помощник главного помощника</span>
                     </div>
                 </div>
-                <div class="about__item col-4">
+                <div class="about__item col-sm-12 col-md-6 col-lg-4">
                     <div class="item__wrapper-img">
                         <img src="img/regina.jpg"/>
                     </div>
@@ -79,16 +87,16 @@
                     <span class="contacts__subtitle">Тут вы можете найти наиболее удобный для вас способ связаться с нами.</span>
                 </div>
                 <div class="contacts__content row">
-                    <div class="content__mail col-4">
+                    <div class="content__mail col-sm-12 col-md-4">
                         <p class="mail__title">Почта:</p>
                         <a href="mailto:valeriaviv@mail.ru" class="mail__link">valeriaviv@mail.ru</a>
                     </div>
-                    <div class="content__social col-4">
-                        <p class="social__title">Соцсети:</p>
+                    <div class="content__social col-sm-12 col-md-4">
+                        <p class="social__title">Соцсети и месседжеры:</p>
                         <a href="https://t.me/uguha" class="social__link">t.me/uguha</a>
                         <a href="https://vk.com/official.school43" class="social__link">https://vk.com/official.school43</a>
                     </div>
-                    <div class="content__git col-4">
+                    <div class="content__git col-sm-12 col-md-4">
                         <p class="git__title">Другое:</p>
                         <a href="https://github.com/uguha" class="git__link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
@@ -120,8 +128,16 @@
                                  14.3578 11.1665 15.3605Z" fill="white"/>
                             </svg>
                         </a>
-                        <a href="tel:+79123456788">+79123456788</a>
+                        <a href="tel:+79123456788" class="social__link">+79123456788</a>
                     </div>
+                </div>
+                <div class="contacts__form row">
+                    <form action="#" class="contacts-form col-12">
+                        <p class="form-title">Можете просто оставить заявку, мы свяжемся с вами</p>
+                        <input type="text" class="input input-name" placeholder="Ваше имя">
+                        <input type="phone" class="input input-phone" placeholder="Ваш телефон">
+                        <a href="https://t.me/uguha" class="btn form-btn">Бесплатная консультация</a>
+                    </form>
                 </div>
             </div>
         </main>
