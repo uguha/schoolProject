@@ -156,20 +156,18 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 45px;
-    column-gap: 33px;
 }
-.photos__photo{
-    border-radius: 12px;
-    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+.photos__img{
     object-fit: cover;
+    height: 300px;
+    width: 300px;
 }
-.photo-style-1{
-    min-height: 285px;
-    max-width: 225px;
-}
-.photo-style-2{
-    min-height: 285px;
-    max-width: 395px;
+.photos__img__photo{
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 /*end process*/
 
@@ -187,7 +185,7 @@ header{
     text-align: center;
 }
 .why__cards{
-    column-gap: 45px;
+    justify-content: center;
     margin-bottom: 200px;
     margin-top: 75px;
     padding: 0px 15px;
@@ -200,6 +198,7 @@ header{
     color: #000;
     padding: 40px 50px 60px 50px;
     max-width: 340px;
+    height: 100%;
 }
 .card__description{
     align-items: center;
@@ -243,13 +242,20 @@ header{
 }
 .content__social p, .content__social a,
 .content__mail p, .content__mail a,
-.content__git p, .content__git a{
+.content__git p, .content__git a,
+.github__instagram{
     flex-basis: 100%;
 }
-.social__link, .mail__link, .git__link{
+.social__link, .mail__link, .git__link, .instagram__link{
     margin-bottom: 16px;
     color: #fff;
     text-decoration: underline;
+}
+.instagram__link, .git__link{
+    text-decoration: none;
+}
+.git__link{
+    margin-right: 10px;
 }
 .contacts__subtitle{
     text-align: center;
@@ -351,9 +357,108 @@ header{
     .about__item:last-child{
         margin-top: 30px;
     }
+    .photos__img{
+        margin-bottom: 30px;
+    }
 }
 /*end about*/
 
+/*start modal*/
+.modal{
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.active{
+    display: flex;
+}
+.modal__dialog{
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: auto;
+    padding: 40px;
+    width: 95%;
+    max-width: 780px;
+}
+.modal_header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+.modal__text{
+    color: #000;
+}
+.modal_title{
+    color: #000000;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0;
+}
+.close{
+    background-color: transparent;
+    border: none;
+    font-size: 36px;
+    outline: none;
+}
+.close:focus{
+    outline: none;
+}
+.modal-body{
+    margin-bottom: 120px;
+}
+.modal-footer{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    border: 0;
+    padding: 0;
+}
+.btn-modal-footer{
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    padding: 10px 20px;
+    outline: none;
+    transition: all .25s ease,height .2s ease;
+}
+.btn-modal-footer:hover{
+    border: 1px solid #000;
+}
+/*end modal*/
+
+/*works*/
+.works__work{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 40px;
+}
+.work__title{
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.work__image{
+    height: 350px;
+    width: 350px;
+}
+.works__work__img{
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.projects-page header{
+    margin-bottom: 0;
+}
+/**/
 
 /**/
 .burger{
@@ -363,7 +468,6 @@ header{
     height: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
     border-radius: 10px;
 }
-  
 .burger span{
     background-color: #fff;
     position: absolute;
@@ -372,7 +476,6 @@ header{
     left: 15%;
     top: 47%;
 }
-  
 .burger::after, .burger::before{
     content: '';
     background-color: #fff;
@@ -381,15 +484,12 @@ header{
     height: 4px;
     left: 15%;
 }
-  
 .burger::after{
     bottom: 25%;
 }
-  
 .burger::before{
     top: 25%;
 }
-
 .navbar-toggler{
     padding: 0;
 }

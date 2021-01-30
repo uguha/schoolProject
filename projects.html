@@ -11,6 +11,120 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <div class="container projects-page">
+        <header>
+            <nav class="nav navbar navbar-expand-md d-flex justify-content-between">
+                  <div class="logo navigation__logo">
+                    <a href="index.html" class="logo active">Funway</a>
+                  </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <div class="burger"><span></span></div>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav navigation__list">
+                        <li class="nav-item navigation__list__item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item navigation__list__item">
+                            <a href="about.html">О нас</a>
+                        </li>
+                        <li class="nav-item navigation__list__item">
+                            <a href="#" class="active">Наши работы</a>
+                        </li>
+                    </ul>
+                    <div class="navigation__buttons">
+                        <button class="btn btn-order" id="order-btn">Сделать заказ</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="header">
+                <h1 class="header__main-title">Наши работы</h1>
+            </div>
+        </header>
+        <main>
+            <div class="works row">
+                <div class="works__work col-lg-4 col-md-6 col-sm-12">
+                    <div class="work__image">
+                        <img src="../img/img-11.jpg" alt="work" class="works__work__img" id="img-container">
+                    </div>
+                    <div class="work__description">
+                        <p class="work__title">Фотозона №1</p>
+                        <span class="work__sum">от 3500 ₽</span>
+                    </div>
+                </div>
+                <div class="works__work col-lg-4 col-md-6 col-sm-12">
+                    <div class="work__image">
+                        <img src="../img/img-1.jpg" alt="work" class="works__work__img">
+                    </div>
+                    <div class="work__description">
+                        <p class="work__title">Фотозона №2</p>
+                        <span class="work__sum">от 5000 ₽</span>
+                    </div>
+                </div>
+                <div class="works__work col-lg-4 col-md-6 col-sm-12">
+                    <div class="work__image">
+                        <img src="../img/img-6.jpeg" alt="work" class="works__work__img">
+                    </div>
+                    <div class="work__description">
+                        <p class="work__title">Фотозона №3</p>
+                        <span class="work__sum">от 4000 ₽</span>
+                    </div>
+                </div>
+                <div class="works__work col-lg-4 col-md-6 col-sm-12">
+                    <div class="work__image">
+                        <img src="../img/img-7.png" alt="work" class="works__work__img">
+                    </div>
+                    <div class="work__description">
+                        <p class="work__title">Декорации на праздник №1</p>
+                        <span class="work__sum">от 1500 ₽</span>
+                    </div>
+                </div>
+                <div class="works__work col-lg-4 col-md-6 col-sm-12">
+                    <div class="work__image">
+                        <img src="../img/img-8.jpg" alt="work" class="works__work__img">
+                    </div>
+                    <div class="work__description">
+                        <p class="work__title">Фотозона №4</p>
+                        <span class="work__sum">от 4500 ₽</span>
+                    </div>
+                </div>
+                <div class="works__work col-lg-4 col-md-6 col-sm-12">
+                    <div class="work__image">
+                        <img src="../img/img-9.jpg" alt="work" class="works__work__img">
+                    </div>
+                    <div class="work__description">
+                        <p class="work__title">Фотозона №5</p>
+                        <span class="work__sum">от 2000 ₽</span>
+                    </div>
+                </div>
+                <div class="works__work col-lg-4 col-md-6 col-sm-12">
+                    <div class="work__image">
+                        <img src="../img/img-10.jpg" alt="work" class="works__work__img">
+                    </div>
+                    <div class="work__description">
+                        <p class="work__title">Декорации на праздник №2</p>
+                        <span class="work__sum">от 5000 ₽</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal_header">
+                <h3 class="modal_title">Оформление заказа</h3>
+                <button class="close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal__text">Наш менеджер свяжется с вами в скором времени.</p>
+            </div>
+            <!-- /.modal-body -->
+            <div class="modal-footer">
+                <button class="btn btn-modal-footer">Ок</button>
+            </div>
+            <!-- /.modal-footer -->
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
 </body>
 </html>

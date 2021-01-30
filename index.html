@@ -34,7 +34,7 @@
                         </li>
                     </ul>
                     <div class="navigation__buttons">
-                        <button class="btn btn-order">Сделать заказ</button>
+                        <button class="btn btn-order" id="order-btn">Сделать заказ</button>
                     </div>
                 </div>
             </nav>
@@ -43,8 +43,8 @@
                 <span class="header__subtitle">Реализуем проекты любой сложности – от стандартных бюджетных конструкций
                 до концептуальных пространственных решений.</span>
                 <div class="header__buttons">
-                    <button class="btn bnt-blue">Заказать</button>
-                    <button class="btn btn-more">Узнать больше</button>
+                    <button class="btn bnt-blue" id="zac">Заказать</button>
+                    <button class="btn btn-more" id="more">Узнать больше</button>
                 </div>
             </div>
         </header>
@@ -55,16 +55,19 @@
                     <span class="process__subtitle">Занимаемся застройкой декораций разной направленности. 
                     Оформляем спортивные, модные, частные и корпоративные мероприятия.</span>
                 </div>
-                <div class="process__photos">
-                    <img src="img/img-5.jpg" alt="img" class="photos__photo photo-style-1"/>
-                    <img src="img/img-2.jpg" alt="img" class="photos__photo photo-style-1"/>
-                    <img src="img/img-3.jpg" alt="img" class="photos__photo photo-style-1"/>
-                    <img src="img/img-4.jpg" alt="img" class="photos__photo photo-style-1"/>
-                </div>
-                <div class="process__photos">
-                    <img src="img/img-1.jpg" alt="img" class="photos__photo photo-style-2"/>
-                    <img src="img/img-11.jpg" alt="img" class="photos__photo photo-style-1"/>
-                    <img src="img/img-6.jpeg" alt="img" class="photos__photo photo-style-2"/>
+                <div class="process__photos row">
+                    <div class="photos__img col-lg-3 col-md-6 col-sm-12">
+                        <img src="img/img-5.jpg" alt="img" class="photos__img__photo photo-style-1"/>
+                    </div>
+                    <div class="photos__img col-lg-3 col-md-6 col-sm-12">
+                        <img src="img/img-2.jpg" alt="img" class="photos__img__photo photo-style-1"/>
+                    </div>
+                    <div class="photos__img col-lg-3 col-md-6 col-sm-12">
+                        <img src="img/img-3.jpg" alt="img" class="photos__img__photo photo-style-1"/>
+                    </div>
+                    <div class="photos__img col-lg-3 col-md-6 col-sm-12">
+                        <img src="img/img-4.jpg" alt="img" class="photos__img__photo photo-style-1"/>
+                    </div>
                 </div>
             </div>
             <div class="why">
@@ -77,38 +80,65 @@
                     </div>
                 </div>
                 <div class="why__cards row">
-                    <div class="why__cards__card col-4">
-                        <div class="card__description">
-                            <p class="card__title">ГАРАНТИРОВАННОЕ КАЧЕСТВО</p>
-                            <span class="card__text">Осуществляем контроль реализации проекта
-                            на всех этапах. Обеспечиваем высокое качество производства, стабильность 
-                            конструкций и наглядную визуализацию. Весь цикл производства проходит в 
-                            собственной мастерской.</span>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="why__cards__card">
+                            <div class="card__description">
+                                <p class="card__title">ГАРАНТИРОВАННОЕ КАЧЕСТВО</p>
+                                <span class="card__text">Осуществляем контроль реализации проекта
+                                на всех этапах. Обеспечиваем высокое качество производства, стабильность 
+                                конструкций и наглядную визуализацию. Весь цикл производства проходит в 
+                                собственной мастерской.</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="why__cards__card col-4">
-                        <div class="card__description">
-                            <p class="card__title">ИНДИВИДУАЛЬНЫЙ ПОДХОД</p>
-                            <span class="card__text">Разрабатываем все проекты с нуля для каждого Клиента. 
-                            Тщательно продумываем концепцию и подачу. Учитаваем все пожелания наших клиентов. 
-                            Создаем уникальные декорации с максимальным вниманием к деталям.
-                            </span>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="why__cards__card">
+                            <div class="card__description">
+                                <p class="card__title">ИНДИВИДУАЛЬНЫЙ ПОДХОД</p>
+                                <span class="card__text">Разрабатываем все проекты с нуля для каждого Клиента. 
+                                Тщательно продумываем концепцию и подачу. Учитаваем все пожелания наших клиентов. 
+                                Создаем уникальные декорации с максимальным вниманием к деталям.
+                                </span>
+                            </div>
                         </div>
                     </div>
-                    <div class="why__cards__card col-4">
-                        <div class="card__description">
-                            <p class="card__title">ДЕМОКРАТИЧНЫЕ ЦЕНЫ</p>
-                            <span class="card__text">Благодаря собственному производству устанавливаем 
-                            адекватные цены на изготовление и установку конструкций, мебели и стендов. 
-                            Составляем прозрачную смету для клиентов. Предоставляем скидки при масштабных 
-                            заказах и регулярном сотрудничестве.
-                            </span>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="why__cards__card">
+                            <div class="card__description">
+                                <p class="card__title">ДЕМОКРАТИЧНЫЕ ЦЕНЫ</p>
+                                <span class="card__text">Благодаря собственному производству устанавливаем 
+                                адекватные цены на изготовление и установку конструкций, мебели и стендов. 
+                                Составляем прозрачную смету для клиентов. Предоставляем скидки при масштабных 
+                                заказах и регулярном сотрудничестве.
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal_header">
+                <h3 class="modal_title">Оформление заказа</h3>
+                <button class="close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal__text">Наш менеджер свяжется с вами в скором времени.</p>
+            </div>
+            <!-- /.modal-body -->
+            <div class="modal-footer">
+                <button class="btn btn-modal-footer">Ок</button>
+            </div>
+            <!-- /.modal-footer -->
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script>
+        zacButton.addEventListener('click', toggleModal);
+        moreButton.addEventListener('click', toggleModal);
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
